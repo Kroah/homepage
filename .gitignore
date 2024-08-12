@@ -52,3 +52,7 @@ site*/
 
 # venv
 .venv/
+
+# PBR
+/config2
+/public/icons
