@@ -14,6 +14,8 @@ import cloudflared from "./cloudflared/widget";
 import coinmarketcap from "./coinmarketcap/widget";
 import crowdsec from "./crowdsec/widget";
 import customapi from "./customapi/widget";
+import customapi2 from "./customapi2/widget";
+import customapi3 from "./customapi3/widget";
 import deluge from "./deluge/widget";
 import diskstation from "./diskstation/widget";
 import downloadstation from "./downloadstation/widget";
@@ -86,6 +88,7 @@ import proxmox from "./proxmox/widget";
 import pterodactyl from "./pterodactyl/widget";
 import pyload from "./pyload/widget";
 import qbittorrent from "./qbittorrent/widget";
+import qbittorrent2 from "./qbittorrent2/widget";
 import qnap from "./qnap/widget";
 import radarr from "./radarr/widget";
 import readarr from "./readarr/widget";
@@ -133,6 +136,8 @@ const widgets = {
   coinmarketcap,
   crowdsec,
   customapi,
+  customapi2,
+  customapi3,
   deluge,
   diskstation,
   downloadstation,
@@ -208,6 +213,7 @@ const widgets = {
   pterodactyl,
   pyload,
   qbittorrent,
+  qbittorrent2,
   qnap,
   radarr,
   readarr,

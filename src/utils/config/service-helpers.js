@@ -379,7 +379,7 @@ export function cleanServiceGroups(groups) {
           slugs,
           symbols,
 
-          // customapi
+          // customapi, customapi2, customapi3
           mappings,
           display,
 
@@ -411,7 +411,7 @@ export function cleanServiceGroups(groups) {
           pointsLimit,
           diskUnits,
 
-          // glances, customapi, iframe
+          // glances, customapi, iframe, customapi2, customapi3
           refreshInterval,
 
           // hdhomerun
@@ -585,7 +585,7 @@ export function cleanServiceGroups(groups) {
         if (type === "openwrt") {
           if (interfaceName) cleanedService.widget.interfaceName = interfaceName;
         }
-        if (type === "customapi") {
+        if ((type === "customapi") || (type === "customapi2") || (type === "customapi3") || (type === "qbittorrent2")) {
           if (mappings) cleanedService.widget.mappings = mappings;
           if (display) cleanedService.widget.display = display;
           if (refreshInterval) cleanedService.widget.refreshInterval = refreshInterval;
