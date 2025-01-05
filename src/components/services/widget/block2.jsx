@@ -1,6 +1,10 @@
 import { useTranslation } from "next-i18next";
 import classNames from "classnames";
 
+function getFinalValue(value) {
+  return (value === undefined || value === null ? "-" : value)
+}
+
 export default function Block2({ values, label }) {
   const { t } = useTranslation();
 
@@ -14,7 +18,7 @@ export default function Block2({ values, label }) {
     >
       <div className="font-bold text-xs uppercase">{t(label)}</div>
       {values.map((value) => (
-        <div className="font-thin text-sm">{value === undefined || value === null ? "-" : value}</div>
+        <div key={getFinalValue(value)} className="font-thin text-sm">{getFinalValue(value)}</div>
       ))}
     </div>
   );
