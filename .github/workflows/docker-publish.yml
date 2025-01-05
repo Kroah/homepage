@@ -108,10 +108,10 @@ jobs:
         id: meta
         uses: docker/metadata-action@v5
         with:
-          images: |
+#          images: |
 #            ${{ env.IMAGE_NAME }}
 #            ghcr.io/${{ env.IMAGE_NAME }}
-            ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
+          images: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
           flavor: |
             latest=auto
 
